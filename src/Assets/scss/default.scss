@@ -6,10 +6,12 @@ header {
     width: 100%;
     background: $black;
     color: $white;
-    height: 150px;
+    height: 100px;
+    margin-bottom: 10px;
 
     .logo {
         position: absolute;
+        max-height: 80px;
         top: 50%; left: 15px;
         @include translateY(-50%);
     }
@@ -33,18 +35,14 @@ header {
             &.last {
                 margin: 0;
             }
-
+            
             a {
                 font-size: 19px;
                 line-height: normal;
                 color: $white;
             }
 
-            Link {
-                font-size: 19px;
-                line-height: normal;
-                color: $red;
-            }
+            
         }
 
     }

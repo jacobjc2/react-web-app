@@ -6,7 +6,9 @@ class Header extends Component {
     return (
       <header>
         <div className="logo">
-            LOGO
+          <Link to='/'>
+            <img src= { process.env.PUBLIC_URL + '/react_logo.png' } alt="LOGO"/>
+          </Link>
         </div>
         <nav>
             <ul>
