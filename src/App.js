@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // Components
 import Header from './Components/headerComponent/header'
 import Footer from './Components/footerComponent/footer'
 import HomePage from './Components/pages/homePage'
+import AboutPage from './Components/pages/aboutPage'
+import ContactPage from './Components/pages/contactPage'
+import ProjectPage from './Components/pages/projectPage'
 
 
 // Includes
 import './Assets/css/default.min.css';
 
+
 class App extends Component {
   render () {
     return (
-      <div className="App">
-
-        <Header />
-        
-          <HomePage />
-
-        <Footer />
-
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path="/" component={ HomePage }/>
+          <Route exact path="/about" component={ AboutPage }/>
+          <Route exact path="/projects" component={ ProjectPage }/>
+          <Route exact path="/contact" component={ ContactPage }/>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
