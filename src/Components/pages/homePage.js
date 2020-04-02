@@ -5,13 +5,36 @@ class HomePage extends Component {
   render () {
     return (
       <div className="container-fluid">
-
-        <h1>
-            Home Page Content
-        </h1>
-        <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+        <div className="row">
+          <div className="banner-img">
+              <img src="https://csssaints.com/images/logos/msoe.png" alt="msoe-raiders"/>
+          </div>
+        </div>
+        <div className="row">
+          <div className="banner-text">
+            <h1>
+              Software Engineer
+            </h1>
+            <hr/>
+            <p>
+              HTML | C/C++ | Python | React | SQL | Agile 
+            </p>
+            <div className="social-links">
+              {/* Github Icon  */}
+              <a href="https://github.com/jacobjc2" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+              </a>
+              {/* LinkedIn Icon  */}
+              <a href="https://www.linkedin.com/in/jacob-christensen-23a8b5134/" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+              {/* Facebook Icon  */}
+              <a href="https://www.facebook.com/jacob.christensen.501?ref=bookmarks" rel="noopener noreferrer" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
