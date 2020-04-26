@@ -1,9 +1,10 @@
+@import "_config.scss";
+
 .project-container {
-    background: $white;
+    text-align: center;
     
-
-    .projects-grid{
+    .react-grid{
         margin-top: 20px;
-
+        display: flex;
     }
 }

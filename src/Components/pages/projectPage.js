@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Card, Button, CardContent, CardMedia, IconButton, CardHeader, Paper } from '@material-ui/core';
-
+import { Tabs, Tab, Grid } from '@material-ui/core';
+import ProjectCard from './displayComponents/projectCard';
 
 class ProjectPage extends Component {
   constructor(props) {
@@ -13,20 +13,14 @@ class ProjectPage extends Component {
   toggleCategories() {
     if(this.state.activeTab === 0) {
       return (
-        <Paper elevation="2" style={{maxWidth: '345', margin: 'auto'}}>
-          <Card >
-          <CardHeader
-            
-            title="React Portfolio"
-            />
-            <CardMedia square
-            imageUrl='https://img.stackshare.io/service/1020/OYIaJ1KK.png'/>
-            <CardContent>
-                This is the code for the website you are currently viewing
-            </CardContent>
-          </Card>
-        </Paper>
-        
+        <div className="react-grid">
+          <ProjectCard 
+          title="React Portfolio"
+          content="First web project using React technology."/>
+
+          <ProjectCard title="React Project 2"
+          content="My second react project"/>
+        </div>
       )
     }
     else if(this.state.activeTab === 1) {
@@ -58,17 +52,13 @@ class ProjectPage extends Component {
               <Tab label="Other"/>
             </Tabs>
           </div>
-          <section className="projects-grid">
-            <Grid container >
-              <Grid item>
-                <div className="content">
-                  {this.toggleCategories()} 
-                </div>
-              </Grid>
-              
+          <Grid container>
+            <Grid item>
+              <div>
+                {this.toggleCategories()} 
+              </div>
             </Grid>
-            
-          </section>
+          </Grid>
 
         </div>
       </div>
