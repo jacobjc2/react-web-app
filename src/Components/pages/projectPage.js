@@ -16,26 +16,43 @@ class ProjectPage extends Component {
         <div className="react-grid">
           <ProjectCard 
           title="React Portfolio"
-          content="First web project using React technology."/>
-
-          <ProjectCard title="React Project 2"
-          content="My second react project"/>
+          content="First web project using React technology."
+          img="logo192.png"
+          link="https://github.com/jacobjc2/react-web-app"/>
         </div>
       )
     }
     else if(this.state.activeTab === 1) {
       return (
-        <div><h1>Python</h1></div>
+        <div className="python-grid">
+          <ProjectCard 
+          title="Python Project"
+          content="Example Python Project"
+          img="python192.png"
+          link="https://github.com/jacobjc2/react-web-app"/>
+        </div>
       )
     }
     else if(this.state.activeTab === 2) {
       return (
-        <div><h1>C/C++</h1></div>
+        <div className="c-grid">
+          <ProjectCard 
+          title="C/C++ Project"
+          content="Example C/C++ project"
+          img="c192.png"
+          link="https://github.com/jacobjc2/react-web-app"/>
+        </div>
       )
     }
     else if(this.state.activeTab === 3) {
       return (
-        <div><h1>Other</h1></div>
+        <div className="other-grid">
+          <ProjectCard 
+          title="Java Project"
+          content="Example Java Project"
+          img="java192.png"
+          link="https://github.com/jacobjc2/react-web-app"/>
+        </div>
       )
     }
   }

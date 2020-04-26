@@ -1,9 +1,23 @@
 @import "_config.scss";
 
 .project-container {
-    text-align: center;
     
     .react-grid{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .python-grid{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .c-grid{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .other-grid{
         margin-top: 20px;
         display: flex;
     }
