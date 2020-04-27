@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { pdfjs } from "react-pdf";
 
 // Components
 import Header from './Components/headerComponent/header'
@@ -12,6 +13,8 @@ import ProjectPage from './Components/pages/projectPage'
 
 // Includes
 import './Assets/css/default.min.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
 class App extends Component {
