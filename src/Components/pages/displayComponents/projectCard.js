@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, CardContent, CardActions, Typography } from '@material-ui/core';
+import { Grid, Card, Button, CardContent, CardActions, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -16,6 +16,8 @@ const useStyles = makeStyles({
       maxHeight: 30,
     },
     pic: {
+      width: "100%",
+      textAlign: "center",
 
     },
     git: {
@@ -33,7 +35,9 @@ const useStyles = makeStyles({
     return (
       <Card className={classes.root} variant="outlined">
         <CardContent>
-          <img className={classes.pic} src={process.env.PUBLIC_URL + props.img} alt="project-img"/>
+          <Grid className={classes.pic}>
+            <img src={process.env.PUBLIC_URL + props.img} alt="project-img"/>
+          </Grid>
           <Typography variant="h5" component="h2">
             { props.title }
           </Typography>

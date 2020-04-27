@@ -48,10 +48,10 @@ class ProjectPage extends Component {
       return (
         <div className="other-grid">
           <ProjectCard 
-          title="Java Project"
-          content="Example Java Project"
-          img="java192.png"
-          link="https://github.com/jacobjc2/react-web-app"/>
+          title="Project Euler"
+          content="Repository of all Project Euler solutions"
+          img="euler192.png"
+          link="https://github.com/jacobjc2/Project-Euler"/>
         </div>
       )
     }
