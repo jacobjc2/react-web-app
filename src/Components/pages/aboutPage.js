@@ -13,7 +13,8 @@ class AboutPage extends Component {
               <div className="my-picture">
                 <Image
                 roundedCircle
-                src="https://www.go-raiders.com/sports/mvball/2018-19/photos/0001/Christensen-J_headshot.jpg?max_width=160&max_height=210"
+                fluid
+                src={process.env.PUBLIC_URL +  'fam_pic.jpg'}
                 alt="my-face"/>
               </div>
               <h1>

@@ -13,12 +13,13 @@ const useStyles = makeStyles({
       fontSize: 14,
     },
     pos: {
-      height: 30,
+      maxHeight: 30,
     },
     pic: {
 
     },
     git: {
+      alignSelf: "end",
       '&:hover': {
         backgroundColor: "#e6e6e6",
         color: "#333",

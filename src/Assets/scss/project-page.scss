@@ -5,6 +5,10 @@
     .react-grid{
         margin-top: 20px;
         display: flex;
+
+        .MuiCardActions-root {
+            align-self: end;
+        }
     }
 
     .python-grid{
@@ -15,10 +19,15 @@
     .c-grid{
         margin-top: 20px;
         display: flex;
+        
+        .MuiCardActions-root {
+            align-self: end;
+        }
     }
 
     .other-grid{
         margin-top: 20px;
         display: flex;
+
     }
 }

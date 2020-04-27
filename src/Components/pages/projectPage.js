@@ -26,10 +26,10 @@ class ProjectPage extends Component {
       return (
         <div className="python-grid">
           <ProjectCard 
-          title="Python Project"
-          content="Example Python Project"
+          title="Pitching Analysis"
+          content="Using Python and machine learning to analyze pitch quality."
           img="python192.png"
-          link="https://github.com/jacobjc2/react-web-app"/>
+          link="https://github.com/jacobjc2/Pitching-Analysis"/>
         </div>
       )
     }
